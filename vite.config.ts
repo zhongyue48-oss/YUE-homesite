@@ -6,7 +6,7 @@ export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, '.', '');
 
   return {
-    base: mode === 'production' ? '/Yue-WEB/' : '/',
+    base: mode === 'production' ? '/YUE-homesite/' : '/',
     plugins: [react()],
     define: {
       'process.env.GEMINI_API_KEY': JSON.stringify(env.GEMINI_API_KEY),
