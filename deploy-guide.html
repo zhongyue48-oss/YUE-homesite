@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>网站更新操作流程</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #f5f5f5;
+      margin: 0;
+      padding: 40px 20px;
+      color: #333;
+    }
+
+    .container {
+      max-width: 680px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      font-size: 22px;
+      font-weight: 700;
+      margin-bottom: 32px;
+      color: #111;
+    }
+
+    .step {
+      background: #fff;
+      border-radius: 10px;
+      padding: 20px 24px;
+      margin-bottom: 16px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    }
+
+    .step-label {
+      font-size: 12px;
+      font-weight: 600;
+      color: #888;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 6px;
+    }
+
+    .step-title {
+      font-size: 16px;
+      font-weight: 600;
+      color: #111;
+      margin-bottom: 12px;
+    }
+
+    code {
+      display: block;
+      background: #f0f0f0;
+      border-radius: 6px;
+      padding: 10px 14px;
+      font-family: "SF Mono", "Fira Code", monospace;
+      font-size: 13px;
+      color: #1a1a1a;
+      margin: 6px 0;
+      white-space: pre;
+    }
+
+    .note {
+      margin-top: 12px;
+      font-size: 13px;
+      color: #666;
+      line-height: 1.6;
+    }
+
+    .note ul {
+      margin: 6px 0 0 0;
+      padding-left: 18px;
+    }
+
+    .note li {
+      margin-bottom: 4px;
+    }
+
+    .tip {
+      background: #eef6ff;
+      border-left: 3px solid #3b82f6;
+      border-radius: 0 8px 8px 0;
+      padding: 12px 16px;
+      margin-top: 24px;
+      font-size: 13px;
+      color: #444;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>网站更新操作流程</h1>
+
+    <div class="step">
+      <div class="step-label">Step 1</div>
+      <div class="step-title">打开 Terminal，进入项目目录</div>
+      <code>cd YUE-homesite</code>
+    </div>
+
+    <div class="step">
+      <div class="step-label">Step 2</div>
+      <div class="step-title">切换到主分支</div>
+      <code>git checkout main</code>
+    </div>
+
+    <div class="step">
+      <div class="step-label">Step 3</div>
+      <div class="step-title">添加或修改文件夹里的内容</div>
+      <div class="note">在项目文件夹中进行你需要的修改，例如更新图片、文字或页面内容。</div>
+    </div>
+
+    <div class="step">
+      <div class="step-label">Step 4</div>
+      <div class="step-title">提交代码改动</div>
+      <code>git add .</code>
+      <code>git commit -m "你的改动描述"</code>
+      <code>git push origin main</code>
+    </div>
+
+    <div class="step">
+      <div class="step-label">Step 5</div>
+      <div class="step-title">部署到 GitHub Pages</div>
+      <code>npm run deploy</code>
+      <div class="note">
+        npm run deploy 会自动执行以下步骤：
+        <ul>
+          <li><strong>npm run build</strong> — 编译源码，生成 dist/</li>
+          <li><strong>gh-pages -d dist</strong> — 把 dist/ 推送到 gh-pages 分支</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="tip">
+      部署完成后稍等 1-2 分钟，网站就会更新。
+    </div>
+  </div>
+</body>
+</html>
