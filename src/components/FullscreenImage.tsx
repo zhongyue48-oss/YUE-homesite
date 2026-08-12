@@ -186,7 +186,6 @@ export default function FullscreenImage({ src, alt = "", onClose }: Props) {
             transformOrigin: "center center",
             userSelect: "none",
             maxWidth: "none",
-            maxHeight: "none",
             width: "auto",
             height: "auto",
             maxHeight: "100%",
