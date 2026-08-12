@@ -29,7 +29,7 @@ export function About() {
 
           <div className="aspect-[3/4] w-full overflow-hidden" style={{ filter: 'url(#wave)' }}>
             <img
-              src="/images/face.jpg"
+              src="images/face.jpg"
               alt="Portrait of Yue Zhong"
               className="w-full h-full object-cover grayscale"
               referrerPolicy="no-referrer"
