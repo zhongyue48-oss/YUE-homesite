@@ -33,7 +33,7 @@ export function Philosophy() {
             </svg>
 
             <img 
-              src="/YUE-homesite/images/philosophy.png"
+              src="/images/philosophy.png"
               alt="Philosophy" 
               className="w-full h-auto object-contain max-h-[80vh] mix-blend-multiply"
               style={{ filter: 'url(#wave-philosophy)' }}
