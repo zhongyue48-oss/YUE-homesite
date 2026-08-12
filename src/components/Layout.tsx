@@ -7,7 +7,7 @@ export function Layout() {
   const location = useLocation();
 
   return (
-    <div className="min-h-screen bg-paper text-neutral-900 font-sans">
+    <div className="min-h-screen bg-paper text-neutral-600/80 font-sans">
       <Navbar />
       <main className="pt-24 md:pt-20 min-h-screen flex flex-col">
         <AnimatePresence mode="wait">
