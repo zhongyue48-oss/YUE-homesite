@@ -1,5 +1,7 @@
 import { motion } from "motion/react";
 import { FadeIn } from "../components/Animations";
+import { useState } from "react";
+import FullscreenImage from "../components/FullscreenImage";
 
 export function About() {
   return (
@@ -55,22 +57,7 @@ export function About() {
         </FadeIn>
 
         <FadeIn delay={0.2} direction="up" className="pt-12 w-full">
-          <div className="flex flex-col gap-12 mb-12">
-            <div className="w-full aspect-auto overflow-hidden">
-              <img
-                src="images/cv 2026_1.jpg"
-                alt="CV Page 1"
-                className="w-full h-auto object-cover mix-blend-multiply"
-              />
-            </div>
-            <div className="w-full aspect-auto overflow-hidden">
-              <img
-                src="images/cv 2026_2.jpg"
-                alt="CV Page 2"
-                className="w-full h-auto object-cover mix-blend-multiply"
-              />
-            </div>
-          </div>
+          <CVBlock />
         </FadeIn>
 
         <FadeIn delay={0.2} direction="up" className="pt-12">
@@ -89,3 +76,32 @@ export function About() {
     </div>
   );
 }
+
+    function CVBlock() {
+      const [modalSrc, setModalSrc] = useState<string | null>(null);
+
+      return (
+        <>
+          <div className="flex flex-col gap-12 mb-12">
+            <div className="w-full aspect-auto overflow-hidden cursor-zoom-in" onClick={() => setModalSrc("images/cv 2026_1.jpg")}>
+              <img
+                src="images/cv 2026_1.jpg"
+                alt="CV Page 1"
+                className="w-full h-auto object-cover mix-blend-multiply"
+              />
+            </div>
+            <div className="w-full aspect-auto overflow-hidden cursor-zoom-in" onClick={() => setModalSrc("images/cv 2026_2.jpg")}>
+              <img
+                src="images/cv 2026_2.jpg"
+                alt="CV Page 2"
+                className="w-full h-auto object-cover mix-blend-multiply"
+              />
+            </div>
+          </div>
+
+          {modalSrc && (
+            <FullscreenImage src={modalSrc} alt="CV" onClose={() => setModalSrc(null)} />
+          )}
+        </>
+      );
+    }
