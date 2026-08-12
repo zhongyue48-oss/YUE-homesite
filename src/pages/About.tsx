@@ -29,7 +29,7 @@ export function About() {
 
           <div className="aspect-[3/4] w-full overflow-hidden" style={{ filter: 'url(#wave)' }}>
             <img
-              src="/images/face.jpg"
+              src="/YUE-homesite/images/face.jpg"
               alt="Portrait of Yue Zhong"
               className="w-full h-full object-cover grayscale"
               referrerPolicy="no-referrer"
@@ -40,7 +40,7 @@ export function About() {
 
       <div className="max-w-3xl w-full flex flex-col items-center text-center gap-16">
         <FadeIn delay={0.2} direction="up">
-          <h2 className="text-4xl md:text-5xl font-serif font-light tracking-wide text-neutral-900 mb-6">
+          <h2 className="text-4xl md:text-5xl font-serif font-light tracking-wide text-neutral-600/80 mb-6">
             Yue Zhong
           </h2>
           <p className="text-xs text-neutral-500 tracking-[0.3em] uppercase font-display">

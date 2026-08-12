@@ -42,8 +42,8 @@ export function ImageGrid({ items, basePath }: ImageGridProps) {
               />
             </div>
             <div className="flex flex-col items-center gap-3 text-center">
-              <h3 className="text-2xl md:text-4xl font-serif font-light text-neutral-900 tracking-wide transition-colors duration-300 group-hover:text-neutral-600">{item.title}</h3>
-              {item.subtitle && <p className="text-xs md:text-sm text-neutral-500 tracking-[0.2em] uppercase font-display">{item.subtitle}</p>}
+              <h3 className="text-2xl md:text-4xl font-serif font-light text-neutral-600/80 tracking-wide transition-colors duration-300 group-hover:text-neutral-400/80">{item.title}</h3>
+              {item.subtitle && <p className="text-xs md:text-sm text-neutral-400/80 tracking-[0.2em] uppercase font-display">{item.subtitle}</p>}
             </div>
           </motion.div>
         </Link>

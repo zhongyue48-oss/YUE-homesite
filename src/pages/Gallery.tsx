@@ -5,28 +5,28 @@ import { ImageItem } from "../components/ImageGrid";
 export const galleryItems: ImageItem[] = [
   {
     id: "cose",
-    src: "/images/door.jpg",
+    src: "/YUE-homesite/images/door.jpg",
     title: "Cose",
     detailedImages: [
-      { caption: "Cefalu", url: "/images/Cefalu.jpeg" },
-      { caption: "Copenhagen", url: "/images/Copenhagen.jpg" },
-      { caption: "Pienza", url: "/images/Pienza.jpeg" },
-      { caption: "33 or 19", url: "/images/33 or 19.jpeg" },
-      { caption: "Esculapio", url: "/images/Esculapio.jpeg" },
-      { caption: "Lagolo", url: "/images/Lagolo.jpeg" },
-      { caption: "Bomarzo", url: "/images/Bomarzo.jpeg" },
-      { caption: "Shaoxing", url: "/images/Shaoxing.jpg" },
-      { caption: "My Little Sister", url: "/images/Chou.jpg" }
+      { caption: "Cefalu", url: "/YUE-homesite/images/Cefalu.jpeg" },
+      { caption: "Copenhagen", url: "/YUE-homesite/images/Copenhagen.jpg" },
+      { caption: "Pienza", url: "/YUE-homesite/images/Pienza.jpeg" },
+      { caption: "33 or 19", url: "/YUE-homesite/images/33 or 19.jpeg" },
+      { caption: "Esculapio", url: "/YUE-homesite/images/Esculapio.jpeg" },
+      { caption: "Lagolo", url: "/YUE-homesite/images/Lagolo.jpeg" },
+      { caption: "Bomarzo", url: "/YUE-homesite/images/Bomarzo.jpeg" },
+      { caption: "Shaoxing", url: "/YUE-homesite/images/Shaoxing.jpg" },
+      { caption: "My Little Sister", url: "/YUE-homesite/images/Chou.jpg" }
     ]
   },
   {
     id: "cosi",
-    src: "/images/window.jpg",
+    src: "/YUE-homesite/images/window.jpg",
     title: "Così",
     detailedImages: [
-      { caption: "Unnamed", url: "/images/Tulip.jpg" },
-      { caption: "Unnamed", url: "/images/winter.jpeg" },
-      { caption: "Unnamed", url: "/images/night.jpeg" }
+      { caption: "Unnamed", url: "/YUE-homesite/images/Tulip.jpg" },
+      { caption: "Unnamed", url: "/YUE-homesite/images/winter.jpeg" },
+      { caption: "Unnamed", url: "/YUE-homesite/images/night.jpeg" }
     ]
   }
 ];
