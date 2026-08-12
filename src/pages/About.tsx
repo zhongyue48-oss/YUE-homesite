@@ -54,6 +54,25 @@ export function About() {
           </p>
         </FadeIn>
 
+        <FadeIn delay={0.2} direction="up" className="pt-12 w-full">
+          <div className="flex flex-col gap-12 mb-12">
+            <div className="w-full aspect-auto overflow-hidden">
+              <img
+                src="images/cv 2026_1.jpg"
+                alt="CV Page 1"
+                className="w-full h-auto object-cover mix-blend-multiply"
+              />
+            </div>
+            <div className="w-full aspect-auto overflow-hidden">
+              <img
+                src="images/cv 2026_2.jpg"
+                alt="CV Page 2"
+                className="w-full h-auto object-cover mix-blend-multiply"
+              />
+            </div>
+          </div>
+        </FadeIn>
+
         <FadeIn delay={0.2} direction="up" className="pt-12">
           <a 
             href="mailto:zhongyue48@gmail.com" 

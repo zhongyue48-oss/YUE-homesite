@@ -16,7 +16,9 @@ export const galleryItems: ImageItem[] = [
       { caption: "Lagolo", url: "images/Lagolo.jpeg" },
       { caption: "Bomarzo", url: "images/Bomarzo.jpeg" },
       { caption: "Shaoxing", url: "images/Shaoxing.jpg" },
-      { caption: "My Little Sister", url: "images/Chou.jpg" }
+      { caption: "My Little Sister", url: "images/Chou.jpg" },
+      { caption: "Liangzhu, Hangzhou", url: "images/Liangchu.jpg" },
+      { caption: "West Lago, Hangzhou", url: "images/Westlake.jpg" }
     ]
   },
   {
