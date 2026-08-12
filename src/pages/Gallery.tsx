@@ -12,7 +12,7 @@ export const galleryItems: ImageItem[] = [
       { caption: "Cefalu", url: assetUrl("images/Cefalu.jpeg") },
       { caption: "Copenhagen", url: assetUrl("images/Copenhagen.jpg") },
       { caption: "Pienza", url: assetUrl("images/Pienza.jpeg") },
-      { caption: "33 or 19", url: assetUrl("images/33 or 19.jpeg") },
+      { caption: "33 or 19", url: assetUrl("images/33-or-19.jpeg") },
       { caption: "Esculapio", url: assetUrl("images/Esculapio.jpeg") },
       { caption: "Lagolo", url: assetUrl("images/Lagolo.jpeg") },
       { caption: "Bomarzo", url: assetUrl("images/Bomarzo.jpeg") },

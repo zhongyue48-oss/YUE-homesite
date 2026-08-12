@@ -84,16 +84,16 @@ export function About() {
       return (
         <>
           <div className="flex flex-col gap-12 mb-12">
-          <div className="w-full aspect-auto overflow-hidden cursor-zoom-in" onClick={() => setModalSrc(assetUrl("images/cv 2026_1.jpg"))}>
+          <div className="w-full aspect-auto overflow-hidden cursor-zoom-in" onClick={() => setModalSrc(assetUrl("images/cv-2026_1.jpg"))}>
               <img
-                src={assetUrl("images/cv 2026_1.jpg")}
+                src={assetUrl("images/cv-2026_1.jpg")}
                 alt="CV Page 1"
                 className="w-full h-auto object-cover mix-blend-multiply"
               />
             </div>
-            <div className="w-full aspect-auto overflow-hidden cursor-zoom-in" onClick={() => setModalSrc(assetUrl("images/cv 2026_2.jpg"))}>
+            <div className="w-full aspect-auto overflow-hidden cursor-zoom-in" onClick={() => setModalSrc(assetUrl("images/cv-2026_2.jpg"))}>
               <img
-                src={assetUrl("images/cv 2026_2.jpg")}
+                src={assetUrl("images/cv-2026_2.jpg")}
                 alt="CV Page 2"
                 className="w-full h-auto object-cover mix-blend-multiply"
               />
