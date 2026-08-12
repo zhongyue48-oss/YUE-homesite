@@ -1,34 +1,35 @@
 import { Link } from "react-router-dom";
 import { motion } from "motion/react";
 import { ImageItem } from "../components/ImageGrid";
+import { assetUrl } from "../lib/utils";
 
 export const galleryItems: ImageItem[] = [
   {
     id: "cose",
-    src: "images/door.jpg",
+    src: assetUrl("images/door.jpg"),
     title: "Cose",
     detailedImages: [
-      { caption: "Cefalu", url: "images/Cefalu.jpeg" },
-      { caption: "Copenhagen", url: "images/Copenhagen.jpg" },
-      { caption: "Pienza", url: "images/Pienza.jpeg" },
-      { caption: "33 or 19", url: "images/33 or 19.jpeg" },
-      { caption: "Esculapio", url: "images/Esculapio.jpeg" },
-      { caption: "Lagolo", url: "images/Lagolo.jpeg" },
-      { caption: "Bomarzo", url: "images/Bomarzo.jpeg" },
-      { caption: "Shaoxing", url: "images/Shaoxing.jpg" },
-      { caption: "My Little Sister", url: "images/Chou.jpg" },
-      { caption: "Liangzhu, Hangzhou", url: "images/Liangchu.jpg" },
-      { caption: "West Lago, Hangzhou", url: "images/Westlake.jpg" }
+      { caption: "Cefalu", url: assetUrl("images/Cefalu.jpeg") },
+      { caption: "Copenhagen", url: assetUrl("images/Copenhagen.jpg") },
+      { caption: "Pienza", url: assetUrl("images/Pienza.jpeg") },
+      { caption: "33 or 19", url: assetUrl("images/33 or 19.jpeg") },
+      { caption: "Esculapio", url: assetUrl("images/Esculapio.jpeg") },
+      { caption: "Lagolo", url: assetUrl("images/Lagolo.jpeg") },
+      { caption: "Bomarzo", url: assetUrl("images/Bomarzo.jpeg") },
+      { caption: "Shaoxing", url: assetUrl("images/Shaoxing.jpg") },
+      { caption: "My Little Sister", url: assetUrl("images/Chou.jpg") },
+      { caption: "Liangzhu, Hangzhou", url: assetUrl("images/Liangchu.jpg") },
+      { caption: "West Lago, Hangzhou", url: assetUrl("images/Westlake.jpg") }
     ]
   },
   {
     id: "cosi",
-    src: "images/window.jpg",
+    src: assetUrl("images/window.jpg"),
     title: "Così",
     detailedImages: [
-      { caption: "Unnamed", url: "images/Tulip.jpg" },
-      { caption: "Unnamed", url: "images/winter.jpeg" },
-      { caption: "Unnamed", url: "images/night.jpeg" }
+      { caption: "Unnamed", url: assetUrl("images/Tulip.jpg") },
+      { caption: "Unnamed", url: assetUrl("images/winter.jpeg") },
+      { caption: "Unnamed", url: assetUrl("images/night.jpeg") }
     ]
   }
 ];

@@ -33,7 +33,7 @@ export function Philosophy() {
             </svg>
 
             <img 
-              src="images/philosophy.png"
+              src={assetUrl("images/philosophy.png")}
               alt="Philosophy" 
               className="w-full h-auto object-contain max-h-[80vh] mix-blend-multiply"
               style={{ filter: 'url(#wave-philosophy)' }}
