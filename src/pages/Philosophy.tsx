@@ -1,5 +1,6 @@
 import { motion } from "motion/react";
 import { FadeIn } from "../components/Animations";
+import { assetUrl } from "../lib/utils";
 
 export function Philosophy() {
   return (
